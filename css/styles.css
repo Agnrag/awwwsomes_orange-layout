@@ -1,6 +1,8 @@
 @import 'reset.css';
-    
-h1,h2,h3 {
+
+h1,
+h2,
+h3 {
     font-family: 'Radley', serif;
 }
 
@@ -34,7 +36,7 @@ ul li {
 }
 
 a {
-    font-size: 15px; 
+    font-size: 15px;
     color: #f04d23;
     text-decoration: underline;
 }
@@ -44,7 +46,27 @@ a {
 }
 
 /*navigation*/
-nav > ul > li > a {
+
+.main-nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.main-nav > ul {
+    position: fixed;
+    text-align: center;
+    padding-top: 40px;
+}
+
+.main-nav > ul > li {
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.main-nav > ul > li > a {
     font-size: 10px;
     color: #000;
     text-decoration: none;
@@ -52,6 +74,7 @@ nav > ul > li > a {
 }
 
 /*hero img*/
+
 .hero {
     background-image: url('../img/banner.jpg');
     background-attachment: fixed;
@@ -59,14 +82,30 @@ nav > ul > li > a {
     background-size: cover;
     max-height: 100%;
     height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
+
 .hero p {
     font-size: 18px;
     color: #fff;
+    text-align: center;
 }
 
 /*contact*/
+
 .contact-header {
     font-size: 100px;
     color: #000;
+}
+
+/*footer*/
+
+footer {
+    background: #efefef;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
