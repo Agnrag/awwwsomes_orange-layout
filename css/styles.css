@@ -1,4 +1,4 @@
-@import 'reset.css';
+/*@import 'reset.css';*/
 
 h1,
 h2,
@@ -45,6 +45,9 @@ a {
     color: #f04d23;
 }
 
+img {
+    max-width: 100%;
+}
 /*navigation*/
 
 .main-nav {
